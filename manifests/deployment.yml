@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: guyspypipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: guyspypipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: guyspypipelinesjavascriptdocker 
+          image: allticket.azurecr.io/guyspypipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
