@@ -4,6 +4,9 @@ metadata:
   name: guyspypipelinesjavascriptdocker 
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: guyspypipelinesjavascriptdocker
   template:
     metadata:
       labels:
